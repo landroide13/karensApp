@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="./style.css">
+  <title>Virtual Safe</title>
+</head>
+<body>
+
+  <div class="content">
+    <header class="app-header">
+      <div class="container">
+        <img src="./img/vs-AppLogo-yellow-transparent.png" class="center" alt="">
+        <!-- <input type="text" class="search" placeholder="Search Document"> -->
+      </div>
+    </header>
+    <div class="subheader">
+      <div class="black">
+        <h2>Welcome Luis</h2>
+        <h4>Cheack Secure number <i class="fa fa-chevron-right"></i></h4>
+      </div>
+      <i class="arrow-right"></i>
+    </div>
+
+    <!-- Main Menu  -->
+    <div class="grid container">
+
+      <div class="item">
+        <h4>Profile</h4>
+        <p>Last update</p>
+        <a class="black" href="./profile.html"><i class="fas fa-user-circle fa-3x"></i></a>
+      </div>
+      <div class="item">
+        <h4>Passport</h4>
+        <p>Last update</p>
+        <a class="black" href="./Pass.html"><i class="fas fa-passport fa-3x"></i></a>
+      </div>
+      <div class="item">
+        <h4>Health Record</h4>
+        <p>Last update</p>
+        <a class="black" href="./Health.html"><i class="fas fa-file-medical fa-3x"></i></a>
+      </div>
+      <div class="item">
+        <h4>Driver License</h4>
+        <p>Empty</p>
+        <a class="black" href="./Drive.html"><i class="far fa-id-badge fa-3x"></i></a>
+      </div>
+      <div class="item" id="myBtn">
+        <h4>Show QR</h4>
+        <p>Last update</p>
+       <i class="fas fa-qrcode fa-3x"></i>
+      </div>
+      <div class="item">
+        <h4>Picture</h4>
+        <p>Empty</p>
+        <a class="black" href="#"><i class="fas fa-portrait fa-3x"></i></a>
+      </div>
+
+      <!-- Modal QR -->
+
+      <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <div class="modal-header">
+            <span class="close">&times;</span>
+            <h2 class="black">QR Code</h2>
+          </div>
+          <div class="modal-body">
+            <p><i class="fas fa-qrcode fa-7x"></i></p>
+          </div>
+          <div class="modal-footer">
+            <h3></h3>
+          </div>
+        </div>
+      </div>
+
+    <!-- Secure Number 
+
+      <div id="" class="modal">
+         Modal content
+        <div class="modal-content">
+          <div class="modal-header">
+            <span class="close">&times;</span>
+            <h2>QR Code</h2>
+          </div>
+          <div class="modal-body">
+            <p><i class="fas fa-qrcode fa-7x"></i></p>
+          </div>
+          <div class="modal-footer">
+            <h3></h3>
+          </div>
+        </div>
+      </div>
+
+    </div> -->
+
+  </div>
+  
+  <footer class="app-footer">
+    <ul>
+      <li>
+        <a href="./main.html" class="no">
+          <i class="fas fa-home"></i>
+          Home
+        </a> 
+      </li>
+      <li>
+        <a href="./profile.html">
+          <i class="fa fa-user"></i>
+          Account
+        </a>
+      </li>
+      <li>
+        <a href="./about.html">
+          <i class="fas fa-file-alt"></i>
+          About
+        </a>
+      </li>
+      <li>
+        <a href="./index.html" class="no">
+          <i class="fas fa-sign-out-alt"></i>
+          Log Out
+        </a> 
+      </li>
+    </ul>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

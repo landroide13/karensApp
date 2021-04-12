@@ -1,0 +1,406 @@
+:root {
+  --primary: #000;
+  --secondary: #e0b629;
+  --third: #ac0000;
+  --grey: #ccc;
+  --grey2: #c7c6c6;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1 0 auto;
+}
+
+.center div {
+  text-align: center;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 10px;
+  overflow: none;
+}
+
+.app-header {
+  background-color: var(--primary);
+  box-shadow: 3px 3px 10px #888;
+}
+
+.app-header .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 10px;
+}
+
+.logo {
+  margin-bottom: 16px;
+  color: #fff;
+}
+
+.app-header input[type="text"] {
+  padding: 7px;
+  width: 300px;
+  border-radius: 3px;
+}
+
+/* Sub Header */
+
+.subheader {
+  background: var(--secondary);
+  color: #fff;
+  box-shadow: 3px 3px 10px #888;
+  margin: 0 auto 16px auto;
+  width: 90%;
+  font-size: 14px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.subheader p {
+  margin: 4px;
+}
+
+.subheader .fa-dolly {
+  font-size: 22px;
+}
+
+.black{
+  color:var(--primary);
+}
+
+/* Wrapper */
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 60px;
+  margin-top: 4em;
+}
+
+.btn1 {
+  outline: none;
+  border: none;
+  background-color: var(--secondary);
+  font-size: 16px;
+  font-weight:bolder;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 25px 80px;
+  margin: 0 auto;
+  border-radius: 5px;
+  box-shadow: 2px 6px #ccc;
+}
+
+.btn1:hover {
+  box-shadow: 0 4px var(--primary);
+  background-color: #ccc;
+  color: var(--secondary);
+  top: 2px;
+}
+
+.btn1:active {
+  box-shadow: 0 0 var(--secondary);
+  top: 6px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+
+ li a .no{
+  text-decoration: none;
+  color: #000;
+}
+
+/* Grid Menu */
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+}
+
+.grid .item {
+  display: flex;
+  flex-direction: column;
+  border: 1px #ccc solid;
+  padding: 10px;
+  box-shadow: 1px 1px 2px #ccc;
+}
+
+.grid .item p {
+  font-size: 14px;
+  color: var(--secondary);
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.grid .item h4 {
+  margin-bottom: 5px;
+}
+
+.grid .item i{
+  align-self:flex-end;
+}
+
+.grid .item a{
+  align-self:flex-end;
+}
+
+
+
+
+/* Footer */
+
+.app-footer {
+  flex-shrink: 0;
+  background: var(--primary);
+  color: #444;
+  padding: 10px;
+  font-size: 14px;
+  margin-top: 10px;
+
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.app-footer ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.app-footer ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.app-footer ul li i {
+  font-size: 22px;
+}
+
+/* Splash */
+
+#splash {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--primary);
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 1s;
+}
+
+#splash i {
+  color: #fff;
+}
+
+#splash.fade {
+  opacity: 0;
+  z-index: -2;
+}
+
+/* image splash */
+
+img .center{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 15%;
+  width: 2.5%;
+}
+
+img{
+  width: 25%;
+  height: 15%;
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .grid .item i {
+    font-size: 32px;
+  }
+
+  .app-footer ul li i {
+    font-size: 32px;
+  }
+}
+
+/* Form */
+
+.contact form{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+  margin: 10px;
+  box-shadow: 3px 3px 10px #888;
+  padding: 5px;
+}
+
+.top5{
+  margin-top: 5em;
+}
+
+.contact form label{
+  display: block;
+}
+
+.contact form p {
+  margin: 0;
+}
+
+.contact form .full{
+  grid-column: 1 / 3;
+}
+
+.contact form button, .contact form input, .contact form textarea{
+  width: 100%;
+  padding: 1em;
+  border: 1px solid #ccc;
+}
+
+.contact form button {
+  background: var(--secondary);
+  border: 0;
+  text-transform: uppercase;
+}
+
+.contact form button:hover,
+.contact form button:focus {
+  background: var(--grey);
+  color: var(--secondary);
+  outline: 0;
+  transition: background-color 2s ease-out;
+}
+
+/* The modal Style */
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  -webkit-animation-name: fadeIn; /* Fade in the background */
+  -webkit-animation-duration: 0.4s;
+  animation-name: fadeIn;
+  animation-duration: 0.4s
+}
+
+/* Modal Content */
+.modal-content {
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+  background-color: #fefefe;
+  width: 100%;
+  -webkit-animation-name: slideIn;
+  -webkit-animation-duration: 0.4s;
+  animation-name: slideIn;
+  animation-duration: 0.4s
+}
+
+/* The Close Button */
+.close {
+  color:var(--primary);
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: var(--secondary);
+  color: white;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+  padding: 2px 16px;
+  background-color: var(--secondary);
+  color: white;
+}
+
+/* Add Animation */
+@-webkit-keyframes slideIn {
+  from {bottom: -300px; opacity: 0} 
+  to {bottom: 0; opacity: 1}
+}
+
+@keyframes slideIn {
+  from {bottom: -300px; opacity: 0}
+  to {bottom: 0; opacity: 1}
+}
+
+@-webkit-keyframes fadeIn {
+  from {opacity: 0} 
+  to {opacity: 1}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0} 
+  to {opacity: 1}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
