@@ -37,12 +37,9 @@ window.onclick = function(event) {
 
 // Camera active
 
-navigator.mediaDevices.getUserMedia({
-  video: true,
-});
-
-// Second Modal
-
+// navigator.mediaDevices.getUserMedia({
+//   video: true,
+// });
 
 
 
