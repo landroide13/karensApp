@@ -1,6 +1,7 @@
 :root {
-  --primary: #000;
-  --secondary: #e0b629;
+  --primary: rgb(34, 32, 32);
+  --secondary: #df7c1f;
+  --orange2: #FF8A00;
   --third: #ac0000;
   --grey: #ccc;
   --grey2: #c7c6c6;
@@ -391,16 +392,87 @@ img{
 }
 
 
+/* List Health */
+
+.list{
+  display: grid;
+  grid-template-columns: 2fr;
+  grid-gap: 1px;
+  list-style: none;
+  margin-top: -2em;
+}
+
+.list .doc{
+  display: flex;
+  flex-direction: column;
+  border: 1px #ccc solid;
+  padding: 5px;
+
+  background-color: var(--secondary);
+  text-align: center;
+}
+
+.list .doc:hover{
+  margin: 10px;
+  padding: .5rem 1.5rem;
+  transition: .5s;
+}
+
+.list h2{
+  margin-bottom: 5px;
+  font-weight: 500;
+  text-align: center;
+  font-size: 2em;
+}
 
 
 
+/* Second Form */
 
+.contact-flex form{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 20px;
+  margin: 5px;
+  box-shadow: 3px 3px 10px #888;
+  padding: 5px;
+}
 
+.contact-flex form button {
+  background: var(--secondary);
+  border: 0;
+  text-transform: uppercase;
+}
 
+.contact-flex form button, .contact-flex form input{
+  width: 100%;
+  padding: 1em;
+  border: 1px solid #ccc;
+}
+.contact-flex i{
+  color: var(--secondary);
+}
 
+ .snap {
+  margin-left: .3em;
+}
 
+/* Picture */
 
+.picture{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
+.picture img{
+  width: 6em;
+  height: 6em;
+}
 
+.picture img:hover{
+  opacity: .8;
+  transition: .5s;
+}
 
 
