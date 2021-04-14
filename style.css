@@ -178,9 +178,9 @@ a {
   flex-shrink: 0;
   background: var(--primary);
   color: #444;
-  padding: 10px;
-  font-size: 14px;
-  margin-top: 10px;
+  padding: 12px;
+  font-size: 15px;
+  margin-top: 12px;
 
   position: fixed;
   left: 0;
@@ -500,7 +500,7 @@ img{
 .text-card p{
   border: 1px #ccc solid;
   padding: .5em;
-  margin: .3em;
+  margin: .3em .5em;
   box-shadow: 1px 1px 2px #ccc;
   width: 100%;
   height: 100%;
